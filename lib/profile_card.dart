@@ -45,7 +45,7 @@ class ProfileCard extends StatelessWidget{
                   radius: 50,
                   backgroundImage: AssetImage('assets/profile.png'),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
 
                 const Divider(
                   color: Colors.grey,
@@ -91,7 +91,7 @@ class ProfileCard extends StatelessWidget{
               ],
             ),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
 
           Container(
             width: MediaQuery.of(context).size.width * 0.9, // 0.9 = 90% screen width
@@ -124,7 +124,7 @@ class ProfileCard extends StatelessWidget{
             child: const Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Divider(
+                Divider(
                   color: Colors.grey,
                   thickness: 1,
                   indent: 20,
@@ -148,25 +148,25 @@ class ProfileCard extends StatelessWidget{
                 Row(
                   children: [
                     Container(
-                      width: 50, // ขนาดเส้นผ่านศูนย์กลาง
+                      width: 50,
                       height: 50,
                       decoration: const BoxDecoration(
                         shape: BoxShape.circle,
                         image: DecorationImage(
                           image: AssetImage('assets/contacts/facebook.png'),
-                          fit: BoxFit.cover, // ปรับขนาดให้เต็มพื้นที่
+                          fit: BoxFit.cover,
                         ),
                       ),
                     ),
                     const SizedBox(width: 20),
                     Container(
-                      width: 50, // ขนาดเส้นผ่านศูนย์กลาง
+                      width: 50,
                       height: 50,
                       decoration: const BoxDecoration(
                         shape: BoxShape.circle,
                         image: DecorationImage(
                           image: AssetImage('assets/contacts/instagram.png'),
-                          fit: BoxFit.cover, // ปรับขนาดให้เต็มพื้นที่
+                          fit: BoxFit.cover,
                         ),
                       ),
                     ),
